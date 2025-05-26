@@ -2,10 +2,11 @@
     --primary-color: #00602B;
     --secondary-color: #BB161D;
     --border-color: #DCDDDF;
+    --font : Roboto, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font);
     margin: 0;
     padding: 0;
     color: aliceblue;
@@ -24,14 +25,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+   
 }
 
 .main-content {
     position: relative;
     width: 100%;
     height: 750px;
-    
-    
 }
 
 .main-content picture img {
@@ -62,9 +62,18 @@ header {
     text-align: center;
 }
 
-.weather-info img {
-    width: 50px;
-    height: 50px;
+.weather-info h1::after {
+    content: "🌤️";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.weather-icon {
+    opacity: 0%;
+    width: 1px;
+    height: 1px;
 }
 
 footer {
