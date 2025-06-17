@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #596869;
+    --secondary-color:  #6C8976;
+    --sub-color: #79B791;
+    --border-color: #ABD1B5;
+    --extra-color: #FFFFFF;
+    --small-text: #E6EFE6;
+    --big-font : "Roboto";
+    --small-font : 'Times New Roman', Times, serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: var(--border-color);
+    color: var(--secondary-color);    
+}
+
+.nav a{
+    color: var(--extra-color);
+    text-decoration: none;
+    font-family: var(--big-font);
+    margin: 5px;
+    padding: 7px;
+    border: var(--border-color) solid;
+    border-radius: 10px;
+    align-self: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.titleDiv {
+    grid-column: 1/4;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--border-color);
+}
+
+.card-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card-one h1 {
+    font-family: var(--big-font);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-one p {
+    grid-column: 1/4;
+    margin: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-family: var(--small-font);
+    color: #596869;
+    word-spacing: 0.5px;
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+.buttonDiv {
+    grid-column: 3/4;
+    text-align: center;
+    border-radius: 10px;
+    align-content: end;
+}
+
+.card-one button {
+    background-color: var(--border-color);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid thin var(--sub-color);
+    width: 225px;
+    cursor: pointer;
+
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.card-one button:hover{
+    background-image: linear-gradient(to right, var(--small-text), var(--border-color));
+    color: var(--secondary-color);
+
+    transform: scale(1.05);
+    
+}
+
+.card-two img {
+    width: 400px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 3px;
+    border: 2px solid var(--small-text);
+    
+}
+
+footer {
+    background-image: linear-gradient(to right, var(--border-color), var(--primary-color));
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+footer a {
+    color: var(--extra-color);
+}
+
+footer p {
+    color: var(--extra-color);
+    margin: 5px;
+    font-family: var(--small-font);
+}
