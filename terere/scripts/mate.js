@@ -3,7 +3,6 @@ const firstText = "Tererê or Mate is a cold drink made with crushed mate leaves
 const secondText = "The name tererê originates from the Guarani language, spoken by indigenous communities in South America. It is believed that the term mimics the sound of water being poured over the erva-mate and filtered through the bomba (metal straw) when drinking. In Paraguay and Argentina, the spelling tereré is commonly used, reflecting the pronunciation in Spanish and Guarani. In Brazil, particularly in Mato Grosso do Sul, both tererê and tereré are used interchangeably, with the former being influenced by Portuguese phonetics.";
 
 //Function to change beetwen paragraphs on home page
-
 function toggleText() {
     var text = document.getElementById("dynamicText");
     var button = document.getElementById("button");

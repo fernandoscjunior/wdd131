@@ -37,7 +37,8 @@ header nav {
 
 header nav a:hover {
     background-color: var(--border-color);
-    color: var(--secondary-color);    
+    color: var(--secondary-color);
+    transform: scale(1.10);
 }
 
 .nav a{
@@ -77,6 +78,13 @@ main {
     margin: 10px;
 }
 
+.card-one h2 {
+    font-family: var(--big-font);
+    color: var(--secondary-color);
+    padding: 10px;
+    margin: 10px;
+}
+
 .card-one p {
     grid-column: 1/4;
     margin: 10px;
@@ -85,7 +93,6 @@ main {
     font-family: var(--small-font);
     color: #596869;
     word-spacing: 0.5px;
-
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -105,26 +112,21 @@ main {
     border: solid thin var(--sub-color);
     width: 225px;
     cursor: pointer;
-
     transition: background-color 0.5s ease, transform 0.3s ease;
+    margin-bottom: 50px;
 }
 
 .card-one button:hover{
-    background-image: linear-gradient(to right, var(--small-text), var(--border-color));
-    color: var(--secondary-color);
-
     transform: scale(1.05);
-    
 }
 
 .card-two img {
-    width: 400px;
-    height: 350px;
+    width: 390px;
+    height: 390px;
     margin: 10px;
     border-radius: 15px;
     padding: 3px;
     border: 2px solid var(--small-text);
-    
 }
 
 footer {
@@ -133,6 +135,7 @@ footer {
     padding: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    margin-top: 65px;
 }
 
 footer a {
@@ -143,4 +146,95 @@ footer p {
     color: var(--extra-color);
     margin: 5px;
     font-family: var(--small-font);
+}
+
+/*History page CSS*/
+.history-main {
+    display: grid;
+    flex-flow: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.history-main h1 {
+    font-family: var(--big-font);
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 10px;
+}
+
+.history-main p {
+    margin: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-family: var(--small-font);
+    color: var(--primary-color);
+}
+
+.history-main img {
+    width: 600px;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 3px;
+    border: 2px solid var(--small-text);
+}
+
+/* Make Terere Page*/
+
+.make main {
+    display: flex;
+    flex-flow: column;
+}
+
+/* Form CSS*/
+
+.form {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--extra-color);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+    font-family: var(--big-font);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--sub-color);
+    border-radius: 10px;
+    text-align: center;
+}
+
+input, select, textarea {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+input[type="submit"] {
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form button {
+    background-color: var(--border-color);
+    color: var(--extra-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid thin var(--sub-color);
+    cursor: pointer;
 }

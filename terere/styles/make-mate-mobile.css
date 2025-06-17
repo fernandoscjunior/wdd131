@@ -9,19 +9,9 @@
         flex-flow: column;
     }
 
-    .card-two img {
-        width: 350px;
-        height: auto;
-    }
-
-    /*History page Mobile CSS*/
-    .history-main {
+    .draggable-container {
         display: flex;
         flex-flow: column;
     }
 
-    .history-main img {
-        width: 360px;
-        height: auto;
-    }
 }
